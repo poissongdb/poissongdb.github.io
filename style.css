@@ -142,7 +142,7 @@ h1 {
 .about { padding-top: 1.75rem; }
 
 /* Keep running text at a comfortable line length */
-.about p, .lead-in, #publications > p, #contact p, address { max-width: 40rem; }
+.about p, .lead, #publications > p, #contact p, address { max-width: 40rem; }
 
 /* Section headings */
 h2 {
@@ -158,9 +158,14 @@ h3 {
   line-height: 1.35;
   text-wrap: balance;
 }
-.lead-in { color: var(--muted); }
+/* Reviews, just below the research overview */
+.reviews { margin: 1.5rem 0 2.25rem; }
+.reviews ul { margin: 0; padding: 0; list-style: none; line-height: 1.45; }
+.reviews li + li { margin-top: 0.6rem; }
+.reviews .meta { display: block; margin-top: 0.1rem; font-size: 0.95rem; color: var(--muted); }
+.reviews .meta b { font-weight: 600; color: var(--ink); }
 
-/* Research questions: figure on the left, heading and text on the right */
+/* Research lines: figure on the left, heading and text on the right */
 .topic {
   display: grid;
   grid-template-columns: 15rem minmax(0, 1fr);
